@@ -1,0 +1,267 @@
+{
+    "navigation": {
+        "features": "Features",
+        "appShowcase": "iOS App",
+        "pricing": "Pricing",
+        "signIn": "Sign in"
+    },
+    "hero": {
+        "title": {
+            "part1": "Complete ERP",
+            "highlight": "solution",
+            "part2": "for modern businesses."
+        },
+        "subtitle": "Streamline orders, invoices, inventory, and sales with MSeller Cloud. A comprehensive platform that unifies your business operations with powerful mobile capabilities.",
+        "cta": {
+            "primary": "Start free trial",
+            "secondary": "Watch demo"
+        },
+        "trustedBy": "Trusted by growing businesses worldwide"
+    },
+    "primaryFeatures": {
+        "title": "Everything you need to run your business.",
+        "subtitle": "Complete ERP solution with customer management, inventory control, sales tracking, and powerful analytics.",
+        "features": {
+            "payroll": {
+                "title": "Customer Management",
+                "description": "Complete CXC system with customer database, accounts receivable, credit management, and payment history tracking."
+            },
+            "expenses": {
+                "title": "Inventory Control",
+                "description": "Real-time stock monitoring, multi-location support, automated alerts, and comprehensive product catalog management."
+            },
+            "vat": {
+                "title": "Sales Management",
+                "description": "End-to-end order processing, multiple payment options, sales analytics, and performance tracking across territories."
+            },
+            "reporting": {
+                "title": "Reports & Analytics",
+                "description": "Custom reports, real-time dashboards, advanced filtering by seller, location, date, and KPI tracking for data-driven decisions."
+            }
+        },
+        "ariaLabel": "Features for running your business"
+    },
+    "secondaryFeatures": {
+        "title": "Powerful features for operational excellence.",
+        "subtitle": "Mobile-first design, role-based access control, multi-location support, and cloud-based accessibility. Work from anywhere, on any device."
+    },
+    "aiFeatures": {
+        "badge": "Powered by AI",
+        "title": "MSeller AI Assistant",
+        "subtitle": "Your Intelligent Sales Partner",
+        "description": "Ask questions, get insights, and make smarter decisions with AI that understands your business. Transform how you work with data through simple conversations.",
+        "features": [
+            {
+                "icon": "analytics",
+                "title": "Ask Anything About Your Business",
+                "description": "Get instant answers to questions like 'What are my best-selling products?' or 'Which customers haven't ordered recently?' No reports to build, just ask."
+            },
+            {
+                "icon": "chat",
+                "title": "Talk Naturally, Get Smart Answers",
+                "description": "Speak to your data in plain language. Ask follow-up questions, compare time periods, and drill into details - all through natural conversation."
+            },
+            {
+                "icon": "integration",
+                "title": "See Your Complete Business Picture",
+                "description": "Access real-time insights from customers, inventory, sales, and orders in one place. AI connects all your data automatically."
+            },
+            {
+                "icon": "automation",
+                "title": "Save Hours Every Week",
+                "description": "Generate reports instantly, get smart recommendations for pricing and inventory, and spot opportunities without manual analysis."
+            },
+            {
+                "icon": "security",
+                "title": "Secure and Private",
+                "description": "Your data stays protected with enterprise-grade security. AI respects your permissions - you only see what you're authorized to access."
+            },
+            {
+                "icon": "intelligence",
+                "title": "Discover Hidden Opportunities",
+                "description": "Identify buying patterns, predict inventory needs, find your best customers, and uncover trends you might miss in spreadsheets."
+            }
+        ],
+        "useCases": {
+            "title": "What You Can Do",
+            "items": [
+                {
+                    "role": "Sales Representatives",
+                    "example": "Which products should I recommend to this customer based on their history?"
+                },
+                {
+                    "role": "Sales Managers",
+                    "example": "Show me my team's performance trends and who needs support"
+                },
+                {
+                    "role": "Business Owners",
+                    "example": "How is my business performing compared to last quarter?"
+                },
+                {
+                    "role": "Inventory Managers",
+                    "example": "What products should I reorder this week?"
+                },
+                {
+                    "role": "Marketing Teams",
+                    "example": "Who are my most valuable customers to target in this campaign?"
+                }
+            ]
+        },
+        "benefits": [
+            "No training required - if you can ask a question, you can use it",
+            "Get insights in seconds instead of hours of manual work",
+            "Make confident decisions backed by real data",
+            "Works on any device - phone, tablet, or computer",
+            "Learns your business to give better answers over time"
+        ],
+        "cta": {
+            "title": "Work Smarter with AI",
+            "subtitle": "Stop digging through reports. Start having conversations with your data.",
+            "button": "Try AI Assistant"
+        }
+    },
+    "callToAction": {
+        "title": "Transform your business today",
+        "subtitle": "Join modern businesses using MSeller Cloud to streamline operations, boost productivity, and drive growth with real-time insights.",
+        "cta": "Start free trial"
+    },
+    "appShowcase": {
+        "badge": "Now Available on iOS",
+        "title": "MSeller for iOS",
+        "subtitle": "Made specially for Sales Representatives and Drivers in distribution. Native iOS app with intuitive design, lightning-fast performance, and offline capabilities.",
+        "appStoreButton": "Download on the App Store",
+        "ctaText": "Join thousands of sales teams using MSeller"
+    },
+    "pricing": {
+        "title": {
+            "highlight": "Flexible pricing,",
+            "rest": "for every business."
+        },
+        "subtitle": "Choose the plan that fits your business size and grow as you scale.",
+        "plans": {
+            "starter": {
+                "name": "Starter",
+                "price": "$29",
+                "description": "Perfect for small businesses getting started with ERP.",
+                "features": [
+                    "Up to 100 customers",
+                    "Up to 500 products",
+                    "Basic inventory management",
+                    "Order processing & invoicing",
+                    "Standard reports",
+                    "Mobile app access",
+                    "Email support"
+                ]
+            },
+            "smallBusiness": {
+                "name": "Professional",
+                "price": "$79",
+                "description": "Complete solution for growing businesses.",
+                "features": [
+                    "Unlimited customers",
+                    "Unlimited products",
+                    "Multi-location inventory",
+                    "Advanced sales analytics",
+                    "Custom reports & dashboards",
+                    "Role-based access control",
+                    "Territory management",
+                    "Priority support"
+                ]
+            },
+            "enterprise": {
+                "name": "Enterprise",
+                "price": "$199",
+                "description": "Advanced features for large organizations.",
+                "features": [
+                    "Everything in Professional",
+                    "Unlimited locations",
+                    "Advanced user management",
+                    "Custom integrations (API)",
+                    "Dedicated account manager",
+                    "Custom training sessions",
+                    "24/7 premium support"
+                ]
+            }
+        },
+        "cta": "Get started",
+        "ariaLabel": "Get started with the {plan} plan for {price}"
+    },
+    "faqs": {
+        "title": "Frequently asked questions",
+        "subtitle": "Have questions about MSeller Cloud? Find answers to common questions about our ERP platform.",
+        "items": [
+            {
+                "question": "What makes MSeller different from other ERP systems?",
+                "answer": "MSeller combines comprehensive functionality with a mobile-first design. Our cloud-based platform provides real-time access to customer data, inventory, sales, and analytics from any device."
+            },
+            {
+                "question": "Can I manage multiple locations with MSeller?",
+                "answer": "Yes! MSeller supports multi-location inventory management, territory-based sales tracking, and location-specific reporting to help you coordinate operations across all your business locations."
+            },
+            {
+                "question": "Does MSeller work on mobile devices?",
+                "answer": "Absolutely. MSeller is designed with a mobile-first approach, providing full functionality on phones and tablets. Your team can process orders, check inventory, and access customer data on the go."
+            },
+            {
+                "question": "What kind of reports can I generate?",
+                "answer": "MSeller offers custom reports with advanced filtering by date, seller, location, distributor, payment type, and more. Export data in multiple formats and create real-time dashboards to track your KPIs."
+            },
+            {
+                "question": "How does user management work?",
+                "answer": "MSeller includes role-based access control allowing you to assign specific permissions based on user roles. You can manage sellers, track individual performance, and control access to sensitive data."
+            },
+            {
+                "question": "Is my data secure?",
+                "answer": "Yes. MSeller uses enterprise-grade security with encrypted data storage, secure authentication, audit logging, and compliance with data protection regulations."
+            },
+            {
+                "question": "Can I import my existing data?",
+                "answer": "Yes! MSeller supports bulk data import for customers, products, and inventory. Our team can help you migrate your existing data during onboarding."
+            },
+            {
+                "question": "What payment methods does MSeller support?",
+                "answer": "MSeller handles multiple payment types including cash, credit, checks, and electronic transfers. Track all payment history and reconcile transactions easily."
+            }
+        ],
+        "ariaLabel": "FAQ"
+    },
+    "auth": {
+        "login": {
+            "title": "Sign in to your account",
+            "noAccount": "Don't have an account?",
+            "signUpLink": "Sign up",
+            "signUpCta": "for a free trial.",
+            "emailLabel": "Email address",
+            "passwordLabel": "Password",
+            "submitButton": "Sign in",
+            "metaTitle": "Sign In"
+        },
+        "register": {
+            "title": "Get started for free",
+            "hasAccount": "Already registered?",
+            "signInLink": "Sign in",
+            "signInCta": "to your account.",
+            "nameLabel": "Full name",
+            "emailLabel": "Email address",
+            "passwordLabel": "Password",
+            "submitButton": "Get started today",
+            "metaTitle": "Sign Up"
+        }
+    },
+    "footer": {
+        "copyright": "Copyright © {year} MSeller. All rights reserved.",
+        "ariaLabels": {
+            "quickLinks": "quick links",
+            "twitter": "MSeller on X",
+            "github": "MSeller on GitHub"
+        }
+    },
+    "common": {
+        "home": "Home",
+        "toggleNavigation": "Toggle Navigation"
+    },
+    "metadata": {
+        "title": "MSeller - Complete ERP solution for modern businesses",
+        "description": "MSeller is a comprehensive business management platform that streamlines orders, invoices, and company operations with powerful ERP tools and mobile system capabilities."
+    }
+}

@@ -2,7 +2,6 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import type { Dictionary } from '@/app/[lang]/dictionaries'
 
 function SwirlyDoodle(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -106,13 +105,13 @@ function Plan({
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
-        {featured ? 'Get started' : 'Get started'}
+        Get started
       </Button>
     </section>
   )
 }
 
-export function Pricing({ dict }: { dict: Dictionary }) {
+export function Pricing() {
   return (
     <section
       id="pricing"
@@ -124,36 +123,57 @@ export function Pricing({ dict }: { dict: Dictionary }) {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
-              <span className="relative">{dict.pricing.title.highlight}</span>
+              <span className="relative">Simple pricing,</span>
             </span>{' '}
-            {dict.pricing.title.rest}
+            for everyone.
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            {dict.pricing.subtitle}
+            It doesn’t matter what size your business is, our software won’t
+            work well for you.
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name={dict.pricing.plans.starter.name}
-            price={dict.pricing.plans.starter.price}
-            description={dict.pricing.plans.starter.description}
+            name="Starter"
+            price="$9"
+            description="Good for anyone who is self-employed and just getting started."
             href="/register"
-            features={dict.pricing.plans.starter.features}
+            features={[
+              'Send 10 quotes and invoices',
+              'Connect up to 2 bank accounts',
+              'Track up to 15 expenses per month',
+              'Manual payroll support',
+              'Export up to 3 reports',
+            ]}
           />
           <Plan
             featured
-            name={dict.pricing.plans.smallBusiness.name}
-            price={dict.pricing.plans.smallBusiness.price}
-            description={dict.pricing.plans.smallBusiness.description}
+            name="Small business"
+            price="$15"
+            description="Perfect for small / medium sized businesses."
             href="/register"
-            features={dict.pricing.plans.smallBusiness.features}
+            features={[
+              'Send 25 quotes and invoices',
+              'Connect up to 5 bank accounts',
+              'Track up to 50 expenses per month',
+              'Automated payroll support',
+              'Export up to 12 reports',
+              'Bulk reconcile transactions',
+              'Track in multiple currencies',
+            ]}
           />
           <Plan
-            name={dict.pricing.plans.enterprise.name}
-            price={dict.pricing.plans.enterprise.price}
-            description={dict.pricing.plans.enterprise.description}
+            name="Enterprise"
+            price="$39"
+            description="For even the biggest enterprise companies."
             href="/register"
-            features={dict.pricing.plans.enterprise.features}
+            features={[
+              'Send unlimited quotes and invoices',
+              'Connect up to 15 bank accounts',
+              'Track up to 200 expenses per month',
+              'Automated payroll support',
+              'Export up to 25 reports, including TPS',
+            ]}
           />
         </div>
       </Container>

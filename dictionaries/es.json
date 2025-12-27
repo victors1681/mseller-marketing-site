@@ -1,0 +1,267 @@
+{
+    "navigation": {
+        "features": "Características",
+        "appShowcase": "App iOS",
+        "pricing": "Precios",
+        "signIn": "Iniciar sesión"
+    },
+    "hero": {
+        "title": {
+            "part1": "Solución ERP",
+            "highlight": "completa",
+            "part2": "para empresas modernas."
+        },
+        "subtitle": "Optimiza pedidos, facturas, inventario y ventas con MSeller Cloud. Una plataforma integral que unifica tus operaciones con potentes capacidades móviles.",
+        "cta": {
+            "primary": "Iniciar prueba gratis",
+            "secondary": "Ver demo"
+        },
+        "trustedBy": "Confiado por empresas en crecimiento en todo el mundo"
+    },
+    "primaryFeatures": {
+        "title": "Todo lo que necesitas para dirigir tu negocio.",
+        "subtitle": "Solución ERP completa con gestión de clientes, control de inventario, seguimiento de ventas y análisis potentes.",
+        "features": {
+            "payroll": {
+                "title": "Gestión de Clientes",
+                "description": "Sistema CXC completo con base de datos de clientes, cuentas por cobrar, gestión de crédito y seguimiento de historial de pagos."
+            },
+            "expenses": {
+                "title": "Control de Inventario",
+                "description": "Monitoreo de stock en tiempo real, soporte multi-ubicación, alertas automatizadas y gestión integral de catálogo de productos."
+            },
+            "vat": {
+                "title": "Gestión de Ventas",
+                "description": "Procesamiento de pedidos de principio a fin, múltiples opciones de pago, análisis de ventas y seguimiento de rendimiento por territorios."
+            },
+            "reporting": {
+                "title": "Reportes y Análisis",
+                "description": "Reportes personalizados, dashboards en tiempo real, filtrado avanzado por vendedor, ubicación, fecha, y seguimiento de KPIs para decisiones basadas en datos."
+            }
+        },
+        "ariaLabel": "Características para dirigir tu negocio"
+    },
+    "secondaryFeatures": {
+        "title": "Funciones potentes para la excelencia operacional.",
+        "subtitle": "Diseño orientado a móviles, control de acceso basado en roles, soporte multi-ubicación y accesibilidad en la nube. Trabaja desde cualquier lugar, en cualquier dispositivo."
+    },
+    "aiFeatures": {
+        "badge": "Impulsado por IA",
+        "title": "Asistente IA de MSeller",
+        "subtitle": "Tu Socio Inteligente de Ventas",
+        "description": "Haz preguntas, obtén información y toma decisiones más inteligentes con IA que entiende tu negocio. Transforma cómo trabajas con datos a través de conversaciones simples.",
+        "features": [
+            {
+                "icon": "analytics",
+                "title": "Pregunta Cualquier Cosa Sobre Tu Negocio",
+                "description": "Obtén respuestas instantáneas a preguntas como '¿Cuáles son mis productos más vendidos?' o '¿Qué clientes no han ordenado recientemente?' Sin informes que construir, solo pregunta."
+            },
+            {
+                "icon": "chat",
+                "title": "Habla Naturalmente, Obtén Respuestas Inteligentes",
+                "description": "Habla con tus datos en lenguaje natural. Haz preguntas de seguimiento, compara períodos de tiempo y profundiza en detalles - todo a través de conversación natural."
+            },
+            {
+                "icon": "integration",
+                "title": "Ve el Panorama Completo de Tu Negocio",
+                "description": "Accede a información en tiempo real de clientes, inventario, ventas y pedidos en un solo lugar. La IA conecta todos tus datos automáticamente."
+            },
+            {
+                "icon": "automation",
+                "title": "Ahorra Horas Cada Semana",
+                "description": "Genera reportes al instante, obtén recomendaciones inteligentes para precios e inventario, y detecta oportunidades sin análisis manual."
+            },
+            {
+                "icon": "security",
+                "title": "Seguro y Privado",
+                "description": "Tus datos permanecen protegidos con seguridad de nivel empresarial. La IA respeta tus permisos - solo ves lo que estás autorizado a acceder."
+            },
+            {
+                "icon": "intelligence",
+                "title": "Descubre Oportunidades Ocultas",
+                "description": "Identifica patrones de compra, predice necesidades de inventario, encuentra tus mejores clientes y descubre tendencias que podrías perder en hojas de cálculo."
+            }
+        ],
+        "useCases": {
+            "title": "Lo Que Puedes Hacer",
+            "items": [
+                {
+                    "role": "Representantes de Ventas",
+                    "example": "¿Qué productos debo recomendar a este cliente basándome en su historial?"
+                },
+                {
+                    "role": "Gerentes de Ventas",
+                    "example": "Muéstrame las tendencias de rendimiento de mi equipo y quién necesita apoyo"
+                },
+                {
+                    "role": "Dueños de Negocio",
+                    "example": "¿Cómo está funcionando mi negocio comparado con el trimestre pasado?"
+                },
+                {
+                    "role": "Gerentes de Inventario",
+                    "example": "¿Qué productos debo reordenar esta semana?"
+                },
+                {
+                    "role": "Equipos de Marketing",
+                    "example": "¿Quiénes son mis clientes más valiosos para dirigir en esta campaña?"
+                }
+            ]
+        },
+        "benefits": [
+            "No requiere capacitación - si puedes hacer una pregunta, puedes usarlo",
+            "Obtén información en segundos en lugar de horas de trabajo manual",
+            "Toma decisiones seguras respaldadas por datos reales",
+            "Funciona en cualquier dispositivo - teléfono, tablet o computadora",
+            "Aprende tu negocio para dar mejores respuestas con el tiempo"
+        ],
+        "cta": {
+            "title": "Trabaja Más Inteligente con IA",
+            "subtitle": "Deja de revisar informes. Comienza a tener conversaciones con tus datos.",
+            "button": "Probar Asistente IA"
+        }
+    },
+    "callToAction": {
+        "title": "Transforma tu negocio hoy",
+        "subtitle": "Únete a las empresas modernas que usan MSeller Cloud para optimizar operaciones, aumentar productividad e impulsar crecimiento con datos en tiempo real.",
+        "cta": "Iniciar prueba gratis"
+    },
+    "appShowcase": {
+        "badge": "Ahora Disponible en iOS",
+        "title": "MSeller para iOS",
+        "subtitle": "Hecho especialmente para Representantes de Ventas y Conductores en distribución. App nativa iOS con diseño intuitivo, rendimiento ultra rápido y capacidades sin conexión.",
+        "appStoreButton": "Descargar en App Store",
+        "ctaText": "Únete a miles de equipos de ventas usando MSeller"
+    },
+    "pricing": {
+        "title": {
+            "highlight": "Precios flexibles,",
+            "rest": "para cada negocio."
+        },
+        "subtitle": "Elige el plan que se ajuste al tamaño de tu negocio y crece a medida que escalas.",
+        "plans": {
+            "starter": {
+                "name": "Inicio",
+                "price": "$29",
+                "description": "Perfecto para pequeñas empresas comenzando con ERP.",
+                "features": [
+                    "Hasta 100 clientes",
+                    "Hasta 500 productos",
+                    "Gestión básica de inventario",
+                    "Procesamiento de pedidos y facturación",
+                    "Reportes estándar",
+                    "Acceso a app móvil",
+                    "Soporte por correo"
+                ]
+            },
+            "smallBusiness": {
+                "name": "Profesional",
+                "price": "$79",
+                "description": "Solución completa para empresas en crecimiento.",
+                "features": [
+                    "Clientes ilimitados",
+                    "Productos ilimitados",
+                    "Inventario multi-ubicación",
+                    "Análisis avanzado de ventas",
+                    "Reportes y dashboards personalizados",
+                    "Control de acceso basado en roles",
+                    "Gestión de territorios",
+                    "Soporte prioritario"
+                ]
+            },
+            "enterprise": {
+                "name": "Empresa",
+                "price": "$199",
+                "description": "Funciones avanzadas para grandes organizaciones.",
+                "features": [
+                    "Todo en Profesional",
+                    "Ubicaciones ilimitadas",
+                    "Gestión avanzada de usuarios",
+                    "Integraciones personalizadas (API)",
+                    "Gerente de cuenta dedicado",
+                    "Sesiones de capacitación personalizadas",
+                    "Soporte premium 24/7"
+                ]
+            }
+        },
+        "cta": "Comenzar",
+        "ariaLabel": "Comenzar con el plan {plan} por {price}"
+    },
+    "faqs": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "¿Tienes preguntas sobre MSeller Cloud? Encuentra respuestas a preguntas comunes sobre nuestra plataforma ERP.",
+        "items": [
+            {
+                "question": "¿Qué hace diferente a MSeller de otros sistemas ERP?",
+                "answer": "MSeller combina funcionalidad integral con un diseño orientado a móviles. Nuestra plataforma en la nube proporciona acceso en tiempo real a datos de clientes, inventario, ventas y análisis desde cualquier dispositivo."
+            },
+            {
+                "question": "¿Puedo gestionar múltiples ubicaciones con MSeller?",
+                "answer": "¡Sí! MSeller soporta gestión de inventario multi-ubicación, seguimiento de ventas basado en territorios y reportes específicos por ubicación para ayudarte a coordinar operaciones en todas tus ubicaciones de negocio."
+            },
+            {
+                "question": "¿MSeller funciona en dispositivos móviles?",
+                "answer": "Absolutamente. MSeller está diseñado con un enfoque móvil primero, proporcionando funcionalidad completa en teléfonos y tablets. Tu equipo puede procesar pedidos, verificar inventario y acceder a datos de clientes en movimiento."
+            },
+            {
+                "question": "¿Qué tipo de reportes puedo generar?",
+                "answer": "MSeller ofrece reportes personalizados con filtrado avanzado por fecha, vendedor, ubicación, distribuidor, tipo de pago y más. Exporta datos en múltiples formatos y crea dashboards en tiempo real para rastrear tus KPIs."
+            },
+            {
+                "question": "¿Cómo funciona la gestión de usuarios?",
+                "answer": "MSeller incluye control de acceso basado en roles permitiéndote asignar permisos específicos según roles de usuario. Puedes gestionar vendedores, rastrear rendimiento individual y controlar acceso a datos sensibles."
+            },
+            {
+                "question": "¿Mis datos están seguros?",
+                "answer": "Sí. MSeller usa seguridad de nivel empresarial con almacenamiento de datos encriptado, autenticación segura, registro de auditoría y cumplimiento con regulaciones de protección de datos."
+            },
+            {
+                "question": "¿Puedo importar mis datos existentes?",
+                "answer": "¡Sí! MSeller soporta importación masiva de datos para clientes, productos e inventario. Nuestro equipo puede ayudarte a migrar tus datos existentes durante la incorporación."
+            },
+            {
+                "question": "¿Qué métodos de pago soporta MSeller?",
+                "answer": "MSeller maneja múltiples tipos de pago incluyendo efectivo, crédito, cheques y transferencias electrónicas. Rastrea todo el historial de pagos y reconcilia transacciones fácilmente."
+            }
+        ],
+        "ariaLabel": "Preguntas frecuentes"
+    },
+    "auth": {
+        "login": {
+            "title": "Inicia sesión en tu cuenta",
+            "noAccount": "¿No tienes una cuenta?",
+            "signUpLink": "Regístrate",
+            "signUpCta": "para una prueba gratuita.",
+            "emailLabel": "Correo electrónico",
+            "passwordLabel": "Contraseña",
+            "submitButton": "Iniciar sesión",
+            "metaTitle": "Iniciar Sesión"
+        },
+        "register": {
+            "title": "Comienza gratis",
+            "hasAccount": "¿Ya estás registrado?",
+            "signInLink": "Inicia sesión",
+            "signInCta": "en tu cuenta.",
+            "nameLabel": "Nombre completo",
+            "emailLabel": "Correo electrónico",
+            "passwordLabel": "Contraseña",
+            "submitButton": "Comenzar hoy",
+            "metaTitle": "Registrarse"
+        }
+    },
+    "footer": {
+        "copyright": "Copyright © {year} MSeller. Todos los derechos reservados.",
+        "ariaLabels": {
+            "quickLinks": "enlaces rápidos",
+            "twitter": "MSeller en X",
+            "github": "MSeller en GitHub"
+        }
+    },
+    "common": {
+        "home": "Inicio",
+        "toggleNavigation": "Alternar Navegación"
+    },
+    "metadata": {
+        "title": "MSeller - Solución ERP completa para empresas modernas",
+        "description": "MSeller es una plataforma integral de gestión empresarial que optimiza pedidos, facturas y operaciones de la empresa con potentes herramientas ERP y capacidades de sistema móvil."
+    }
+}

@@ -8,14 +8,19 @@ import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { AppShowcase } from '@/components/AppShowcase'
 import { AIFeatures } from '@/components/AIFeatures'
-import { getDictionary, defaultLocale } from './[lang]/dictionaries'
+import { getDictionary, type Locale } from './dictionaries'
 
-export default async function Home() {
-  const dict = await getDictionary(defaultLocale)
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>
+}) {
+  const { lang } = await params
+  const dict = await getDictionary(lang)
 
   return (
     <>
-      <Header dict={dict} lang={defaultLocale} />
+      <Header dict={dict} lang={lang} />
       <main>
         <Hero dict={dict} />
         <PrimaryFeatures dict={dict} />
