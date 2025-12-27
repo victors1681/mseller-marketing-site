@@ -22,28 +22,28 @@
         "title": "Todo lo que necesitas para dirigir tu negocio.",
         "subtitle": "Solución ERP completa con gestión de clientes, control de inventario, seguimiento de ventas y análisis potentes.",
         "features": {
-            "payroll": {
-                "title": "Gestión de Clientes",
-                "description": "Sistema CXC completo con base de datos de clientes, cuentas por cobrar, gestión de crédito y seguimiento de historial de pagos."
+            "pos": {
+                "title": "Sistema Punto de Venta",
+                "description": "Interfaz POS rápida e intuitiva con escaneo de códigos de barras, múltiples métodos de pago, impresión de recibos y procesamiento de ventas en tiempo real para operaciones al por mayor y menor."
             },
-            "expenses": {
-                "title": "Control de Inventario",
-                "description": "Monitoreo de stock en tiempo real, soporte multi-ubicación, alertas automatizadas y gestión integral de catálogo de productos."
+            "operations": {
+                "title": "Operaciones Comerciales",
+                "description": "Gestión completa de facturas, pedidos, cotizaciones, cuentas por cobrar (CXC) y control de inventario. Optimiza todo tu ciclo de ventas desde la cotización hasta el pago con flujos de trabajo integrados."
             },
-            "vat": {
-                "title": "Gestión de Ventas",
-                "description": "Procesamiento de pedidos de principio a fin, múltiples opciones de pago, análisis de ventas y seguimiento de rendimiento por territorios."
+            "logistics": {
+                "title": "Logística y Distribución",
+                "description": "Seguimiento de conductores en tiempo real, optimización de rutas, gestión de entregas y monitoreo de transporte. Coordina tu equipo de campo y asegura entregas a tiempo con rastreo GPS."
             },
             "reporting": {
                 "title": "Reportes y Análisis",
-                "description": "Reportes personalizados, dashboards en tiempo real, filtrado avanzado por vendedor, ubicación, fecha, y seguimiento de KPIs para decisiones basadas en datos."
+                "description": "Reportes personalizados, dashboards en tiempo real, filtrado avanzado por vendedor, sucursal, fecha, y seguimiento de KPIs para decisiones basadas en datos."
             }
         },
         "ariaLabel": "Características para dirigir tu negocio"
     },
     "secondaryFeatures": {
         "title": "Funciones potentes para la excelencia operacional.",
-        "subtitle": "Diseño orientado a móviles, control de acceso basado en roles, soporte multi-ubicación y accesibilidad en la nube. Trabaja desde cualquier lugar, en cualquier dispositivo."
+        "subtitle": "Diseño orientado a móviles, control de acceso basado en roles, soporte multi-sucursal y accesibilidad en la nube. Trabaja desde cualquier lugar, en cualquier dispositivo."
     },
     "aiFeatures": {
         "badge": "Impulsado por IA",
@@ -139,91 +139,112 @@
         },
         "subtitle": "Elige el plan que se ajuste al tamaño de tu negocio y crece a medida que escalas.",
         "plans": {
-            "starter": {
-                "name": "Inicio",
-                "price": "$29",
-                "description": "Perfecto para pequeñas empresas comenzando con ERP.",
+            "free": {
+                "name": "Gratis",
+                "price": "$0",
+                "period": "/ mes",
+                "description": "Para individuos y pequeñas empresas que están comenzando",
+                "badge": "",
+                "ideal": "Ideal para probar MSeller o operaciones muy pequeñas",
                 "features": [
-                    "Hasta 100 clientes",
-                    "Hasta 500 productos",
+                    "Hasta 25 clientes",
+                    "Hasta 50 productos",
+                    "1 usuario",
+                    "1 sucursal",
                     "Gestión básica de inventario",
-                    "Procesamiento de pedidos y facturación",
-                    "Reportes estándar",
+                    "Procesamiento de pedidos",
+                    "Facturación simple (sin personalización)",
+                    "Reportes básicos de resumen de ventas",
                     "Acceso a app móvil",
+                    "Soporte comunitario / documentación"
+                ],
+                "restrictions": [
+                    "Sin análisis avanzados",
+                    "Sin integraciones",
+                    "Sin gestión de roles",
+                    "Marca MSeller en facturas"
+                ]
+            },
+            "standard": {
+                "name": "Estándar",
+                "price": "$25",
+                "period": "/ usuario / mes",
+                "description": "Para empresas en crecimiento que necesitan control e insights",
+                "badge": "⭐ Mejor Valor",
+                "ideal": "Mejor valor para PYMEs escalando ventas y distribución",
+                "features": [
+                    "Hasta 1,000 clientes",
+                    "Hasta 5,000 productos",
+                    "Hasta 3 sucursales",
+                    "Hasta 10 usuarios",
+                    "Todo en Gratis",
+                    "Inventario multi-sucursal",
+                    "Gestión avanzada de inventario",
+                    "Facturación profesional",
+                    "Análisis de ventas y dashboards estándar",
+                    "Control de acceso basado en roles",
+                    "Gestión de territorios y rutas",
                     "Soporte por correo"
                 ]
             },
-            "smallBusiness": {
-                "name": "Profesional",
-                "price": "$79",
-                "description": "Solución completa para empresas en crecimiento.",
+            "enterprise": {
+                "name": "Empresarial",
+                "price": "Precio",
+                "period": "personalizado",
+                "description": "Para grandes organizaciones con operaciones complejas",
+                "badge": "🏢",
+                "ideal": "Construido para empresas con alto volumen, automatización e integraciones",
                 "features": [
                     "Clientes ilimitados",
                     "Productos ilimitados",
-                    "Inventario multi-ubicación",
-                    "Análisis avanzado de ventas",
-                    "Reportes y dashboards personalizados",
-                    "Control de acceso basado en roles",
-                    "Gestión de territorios",
-                    "Soporte prioritario"
-                ]
-            },
-            "enterprise": {
-                "name": "Empresa",
-                "price": "$199",
-                "description": "Funciones avanzadas para grandes organizaciones.",
-                "features": [
-                    "Todo en Profesional",
-                    "Ubicaciones ilimitadas",
-                    "Gestión avanzada de usuarios",
-                    "Integraciones personalizadas (API)",
+                    "Sucursales ilimitadas",
+                    "Usuarios ilimitados",
+                    "Todo en Estándar",
+                    "Gestión avanzada de usuarios y permisos",
+                    "Flujos de trabajo personalizados",
+                    "Acceso completo a API e integraciones personalizadas",
+                    "Integraciones con ERP / Contabilidad",
                     "Gerente de cuenta dedicado",
-                    "Sesiones de capacitación personalizadas",
+                    "Onboarding y capacitación personalizada",
+                    "Garantías de SLA y uptime",
                     "Soporte premium 24/7"
                 ]
             }
         },
         "cta": "Comenzar",
+        "contactSales": "Contactar Ventas",
         "ariaLabel": "Comenzar con el plan {plan} por {price}"
     },
     "faqs": {
-        "title": "Preguntas frecuentes",
-        "subtitle": "¿Tienes preguntas sobre MSeller Cloud? Encuentra respuestas a preguntas comunes sobre nuestra plataforma ERP.",
+        "title": "Características Clave",
+        "subtitle": "Descubre lo que hace de MSeller la solución empresarial completa para operaciones modernas de distribución y ventas.",
         "items": [
             {
-                "question": "¿Qué hace diferente a MSeller de otros sistemas ERP?",
-                "answer": "MSeller combina funcionalidad integral con un diseño orientado a móviles. Nuestra plataforma en la nube proporciona acceso en tiempo real a datos de clientes, inventario, ventas y análisis desde cualquier dispositivo."
+                "question": "Plataforma en la Nube",
+                "answer": "MSeller opera 100% en la nube. Accede a tu negocio desde cualquier lugar, en cualquier dispositivo, con actualizaciones automáticas y sin necesidad de mantenimiento de servidores."
             },
             {
-                "question": "¿Puedo gestionar múltiples ubicaciones con MSeller?",
-                "answer": "¡Sí! MSeller soporta gestión de inventario multi-ubicación, seguimiento de ventas basado en territorios y reportes específicos por ubicación para ayudarte a coordinar operaciones en todas tus ubicaciones de negocio."
+                "question": "App Móvil Sin Conexión",
+                "answer": "Funciona sin conexión a internet. Los representantes de ventas y conductores pueden continuar operaciones incluso sin cobertura de red—los datos se sincronizan automáticamente cuando regresa la conectividad."
             },
             {
-                "question": "¿MSeller funciona en dispositivos móviles?",
-                "answer": "Absolutamente. MSeller está diseñado con un enfoque móvil primero, proporcionando funcionalidad completa en teléfonos y tablets. Tu equipo puede procesar pedidos, verificar inventario y acceder a datos de clientes en movimiento."
+                "question": "Integración con ERP",
+                "answer": "Se integra perfectamente con sistemas ERP existentes. Permite a representantes de ventas tomar pedidos, conductores realizar entregas, y equipos de inventario sincronizar conteos móviles directamente con tu ERP."
             },
             {
-                "question": "¿Qué tipo de reportes puedo generar?",
-                "answer": "MSeller ofrece reportes personalizados con filtrado avanzado por fecha, vendedor, ubicación, distribuidor, tipo de pago y más. Exporta datos en múltiples formatos y crea dashboards en tiempo real para rastrear tus KPIs."
+                "question": "Sistema ERP Completo",
+                "answer": "Funciona como un sistema independiente completo. Emite facturas, gestiona cuentas por cobrar (CXC), controla inventario, maneja compras, administra vendedores y más—sin necesidad de software adicional."
             },
             {
-                "question": "¿Cómo funciona la gestión de usuarios?",
-                "answer": "MSeller incluye control de acceso basado en roles permitiéndote asignar permisos específicos según roles de usuario. Puedes gestionar vendedores, rastrear rendimiento individual y controlar acceso a datos sensibles."
+                "question": "Facturación Electrónica DGII",
+                "answer": "Soporte completo para Facturación Electrónica DGII (República Dominicana). Genera e-facturas conformes directamente desde el sistema con envío automático a DGII."
             },
             {
-                "question": "¿Mis datos están seguros?",
-                "answer": "Sí. MSeller usa seguridad de nivel empresarial con almacenamiento de datos encriptado, autenticación segura, registro de auditoría y cumplimiento con regulaciones de protección de datos."
-            },
-            {
-                "question": "¿Puedo importar mis datos existentes?",
-                "answer": "¡Sí! MSeller soporta importación masiva de datos para clientes, productos e inventario. Nuestro equipo puede ayudarte a migrar tus datos existentes durante la incorporación."
-            },
-            {
-                "question": "¿Qué métodos de pago soporta MSeller?",
-                "answer": "MSeller maneja múltiples tipos de pago incluyendo efectivo, crédito, cheques y transferencias electrónicas. Rastrea todo el historial de pagos y reconcilia transacciones fácilmente."
+                "question": "Soporte Multi-Rol",
+                "answer": "Diseñado para representantes de ventas, conductores de entrega y gerentes de inventario. Cada rol obtiene flujos de trabajo optimizados con permisos basados en roles e interfaces móviles."
             }
         ],
-        "ariaLabel": "Preguntas frecuentes"
+        "ariaLabel": "Características Clave"
     },
     "auth": {
         "login": {

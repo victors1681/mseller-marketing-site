@@ -22,28 +22,28 @@
         "title": "Everything you need to run your business.",
         "subtitle": "Complete ERP solution with customer management, inventory control, sales tracking, and powerful analytics.",
         "features": {
-            "payroll": {
-                "title": "Customer Management",
-                "description": "Complete CXC system with customer database, accounts receivable, credit management, and payment history tracking."
+            "pos": {
+                "title": "Point of Sale System",
+                "description": "Fast and intuitive POS interface with barcode scanning, multiple payment methods, receipt printing, and real-time sales processing for retail and wholesale operations."
             },
-            "expenses": {
-                "title": "Inventory Control",
-                "description": "Real-time stock monitoring, multi-location support, automated alerts, and comprehensive product catalog management."
+            "operations": {
+                "title": "Business Operations",
+                "description": "Complete management of invoices, orders, quotes, accounts receivable (CXC), and inventory control. Streamline your entire sales cycle from quote to payment with integrated workflows."
             },
-            "vat": {
-                "title": "Sales Management",
-                "description": "End-to-end order processing, multiple payment options, sales analytics, and performance tracking across territories."
+            "logistics": {
+                "title": "Logistics & Distribution",
+                "description": "Real-time driver tracking, route optimization, delivery management, and transportation monitoring. Coordinate your field team and ensure on-time deliveries with GPS-enabled tracking."
             },
             "reporting": {
                 "title": "Reports & Analytics",
-                "description": "Custom reports, real-time dashboards, advanced filtering by seller, location, date, and KPI tracking for data-driven decisions."
+                "description": "Custom reports, real-time dashboards, advanced filtering by seller, branch, date, and KPI tracking for data-driven decisions."
             }
         },
         "ariaLabel": "Features for running your business"
     },
     "secondaryFeatures": {
         "title": "Powerful features for operational excellence.",
-        "subtitle": "Mobile-first design, role-based access control, multi-location support, and cloud-based accessibility. Work from anywhere, on any device."
+        "subtitle": "Mobile-first design, role-based access control, multi-branch support, and cloud-based accessibility. Work from anywhere, on any device."
     },
     "aiFeatures": {
         "badge": "Powered by AI",
@@ -139,91 +139,112 @@
         },
         "subtitle": "Choose the plan that fits your business size and grow as you scale.",
         "plans": {
-            "starter": {
-                "name": "Starter",
-                "price": "$29",
-                "description": "Perfect for small businesses getting started with ERP.",
+            "free": {
+                "name": "Free",
+                "price": "$0",
+                "period": "/ month",
+                "description": "For individuals and very small businesses getting started",
+                "badge": "",
+                "ideal": "Ideal for testing MSeller or very small operations",
                 "features": [
-                    "Up to 100 customers",
-                    "Up to 500 products",
+                    "Up to 25 customers",
+                    "Up to 50 products",
+                    "1 user",
+                    "1 branch",
                     "Basic inventory management",
-                    "Order processing & invoicing",
-                    "Standard reports",
+                    "Order processing",
+                    "Simple invoicing (no customization)",
+                    "Basic sales summary reports",
                     "Mobile app access",
-                    "Email support"
+                    "Community / documentation support"
+                ],
+                "restrictions": [
+                    "No advanced analytics",
+                    "No integrations",
+                    "No role management",
+                    "MSeller branding on invoices"
                 ]
             },
-            "smallBusiness": {
-                "name": "Professional",
-                "price": "$79",
-                "description": "Complete solution for growing businesses.",
+            "standard": {
+                "name": "Standard",
+                "price": "$25",
+                "period": "/ user / month",
+                "description": "For growing businesses that need control and insights",
+                "badge": "⭐ Best Value",
+                "ideal": "Best value for SMBs scaling sales and distribution",
                 "features": [
-                    "Unlimited customers",
-                    "Unlimited products",
-                    "Multi-location inventory",
-                    "Advanced sales analytics",
-                    "Custom reports & dashboards",
+                    "Up to 1,000 customers",
+                    "Up to 5,000 products",
+                    "Up to 3 branches",
+                    "Up to 10 users",
+                    "Everything in Free",
+                    "Multi-branch inventory",
+                    "Advanced inventory management",
+                    "Professional invoicing",
+                    "Sales analytics & standard dashboards",
                     "Role-based access control",
-                    "Territory management",
-                    "Priority support"
+                    "Territory & route management",
+                    "Email support"
                 ]
             },
             "enterprise": {
                 "name": "Enterprise",
-                "price": "$199",
-                "description": "Advanced features for large organizations.",
+                "price": "Custom",
+                "period": "pricing",
+                "description": "For large organizations with complex operations",
+                "badge": "🏢",
+                "ideal": "Built for enterprises with high volume, automation, and integrations",
                 "features": [
-                    "Everything in Professional",
-                    "Unlimited locations",
-                    "Advanced user management",
-                    "Custom integrations (API)",
+                    "Unlimited customers",
+                    "Unlimited products",
+                    "Unlimited branches",
+                    "Unlimited users",
+                    "Everything in Standard",
+                    "Advanced user & permission management",
+                    "Custom workflows",
+                    "Full API access & custom integrations",
+                    "ERP / Accounting integrations",
                     "Dedicated account manager",
-                    "Custom training sessions",
+                    "Custom onboarding & training",
+                    "SLA & uptime guarantees",
                     "24/7 premium support"
                 ]
             }
         },
         "cta": "Get started",
+        "contactSales": "Contact Sales",
         "ariaLabel": "Get started with the {plan} plan for {price}"
     },
     "faqs": {
-        "title": "Frequently asked questions",
-        "subtitle": "Have questions about MSeller Cloud? Find answers to common questions about our ERP platform.",
+        "title": "Key Features",
+        "subtitle": "Discover what makes MSeller the complete business solution for modern distribution and sales operations.",
         "items": [
             {
-                "question": "What makes MSeller different from other ERP systems?",
-                "answer": "MSeller combines comprehensive functionality with a mobile-first design. Our cloud-based platform provides real-time access to customer data, inventory, sales, and analytics from any device."
+                "question": "Cloud-Based Platform",
+                "answer": "MSeller operates 100% in the cloud. Access your business from anywhere, on any device, with automatic updates and no server maintenance required."
             },
             {
-                "question": "Can I manage multiple locations with MSeller?",
-                "answer": "Yes! MSeller supports multi-location inventory management, territory-based sales tracking, and location-specific reporting to help you coordinate operations across all your business locations."
+                "question": "Offline Mobile App",
+                "answer": "Works without internet connection. Sales reps and drivers can continue operations even without network coverage—data syncs automatically when connectivity returns."
             },
             {
-                "question": "Does MSeller work on mobile devices?",
-                "answer": "Absolutely. MSeller is designed with a mobile-first approach, providing full functionality on phones and tablets. Your team can process orders, check inventory, and access customer data on the go."
+                "question": "ERP Integration",
+                "answer": "Seamlessly integrates with existing ERP systems. Enable sales representatives to take orders, drivers to deliver, and inventory teams to sync mobile counts directly with your ERP."
             },
             {
-                "question": "What kind of reports can I generate?",
-                "answer": "MSeller offers custom reports with advanced filtering by date, seller, location, distributor, payment type, and more. Export data in multiple formats and create real-time dashboards to track your KPIs."
+                "question": "Full ERP System",
+                "answer": "Functions as a complete standalone system. Issue invoices, manage accounts receivable (CXC), control inventory, handle purchases, manage sellers, and more—no additional software needed."
             },
             {
-                "question": "How does user management work?",
-                "answer": "MSeller includes role-based access control allowing you to assign specific permissions based on user roles. You can manage sellers, track individual performance, and control access to sensitive data."
+                "question": "Electronic Invoicing DGII",
+                "answer": "Full support for Facturación Electrónica DGII (Dominican Republic). Generate compliant e-invoices directly from the system with automatic DGII submission."
             },
             {
-                "question": "Is my data secure?",
-                "answer": "Yes. MSeller uses enterprise-grade security with encrypted data storage, secure authentication, audit logging, and compliance with data protection regulations."
-            },
-            {
-                "question": "Can I import my existing data?",
-                "answer": "Yes! MSeller supports bulk data import for customers, products, and inventory. Our team can help you migrate your existing data during onboarding."
-            },
-            {
-                "question": "What payment methods does MSeller support?",
-                "answer": "MSeller handles multiple payment types including cash, credit, checks, and electronic transfers. Track all payment history and reconcile transactions easily."
+                "question": "Multi-Role Support",
+                "answer": "Designed for sales representatives, delivery drivers, and inventory managers. Each role gets optimized workflows with role-based permissions and mobile-first interfaces."
             }
         ],
-        "ariaLabel": "FAQ"
+        "ariaLabel": "Key Features"
     },
     "auth": {
         "login": {

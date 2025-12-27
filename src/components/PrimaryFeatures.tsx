@@ -17,18 +17,18 @@ import screenshotAiAgent from '@/images/screenshots/mseller-ai-agent.png'
 export function PrimaryFeatures({ dict }: { dict: Dictionary }) {
   const features = [
     {
-      title: dict.primaryFeatures.features.vat.title,
-      description: dict.primaryFeatures.features.vat.description,
+      title: dict.primaryFeatures.features.pos.title,
+      description: dict.primaryFeatures.features.pos.description,
       image: screenshotPos,
     },
     {
-      title: dict.primaryFeatures.features.payroll.title,
-      description: dict.primaryFeatures.features.payroll.description,
+      title: dict.primaryFeatures.features.operations.title,
+      description: dict.primaryFeatures.features.operations.description,
       image: screenshotOrders,
     },
     {
-      title: dict.primaryFeatures.features.expenses.title,
-      description: dict.primaryFeatures.features.expenses.description,
+      title: dict.primaryFeatures.features.logistics.title,
+      description: dict.primaryFeatures.features.logistics.description,
       image: screenshotTransport,
     },
     {

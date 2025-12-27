@@ -6,9 +6,9 @@ import backgroundImage from '@/images/background-faqs.jpg'
 
 export function Faqs({ dict }: { dict: Dictionary }) {
   const faqColumns = [
-    dict.faqs.items.slice(0, 3),
-    dict.faqs.items.slice(3, 6),
-    dict.faqs.items.slice(6, 9),
+    dict.faqs.items.slice(0, 2),
+    dict.faqs.items.slice(2, 4),
+    dict.faqs.items.slice(4, 6),
   ]
 
   return (

@@ -54,16 +54,22 @@ function CheckIcon({
 function Plan({
   name,
   price,
+  period,
   description,
   href,
   features,
+  badge,
+  buttonText,
   featured = false,
 }: {
   name: string
   price: string
+  period?: string
   description: string
   href: string
   features: Array<string>
+  badge?: string
+  buttonText: string
   featured?: boolean
 }) {
   return (
@@ -73,7 +79,10 @@ function Plan({
         featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8',
       )}
     >
-      <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
+      <h3 className="mt-5 font-display text-lg text-white">
+        {name}
+        {badge && <span className="ml-2 text-sm font-normal">{badge}</span>}
+      </h3>
       <p
         className={clsx(
           'mt-2 text-base',
@@ -84,6 +93,9 @@ function Plan({
       </p>
       <p className="order-first font-display text-5xl font-light tracking-tight text-white">
         {price}
+        {period && (
+          <span className="text-lg font-normal text-slate-400"> {period}</span>
+        )}
       </p>
       <ul
         role="list"
@@ -106,7 +118,7 @@ function Plan({
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
-        {featured ? 'Get started' : 'Get started'}
+        {buttonText}
       </Button>
     </section>
   )
@@ -128,32 +140,39 @@ export function Pricing({ dict }: { dict: Dictionary }) {
             </span>{' '}
             {dict.pricing.title.rest}
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
-            {dict.pricing.subtitle}
-          </p>
+          <p className="mt-4 text-lg text-slate-400">{dict.pricing.subtitle}</p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name={dict.pricing.plans.starter.name}
-            price={dict.pricing.plans.starter.price}
-            description={dict.pricing.plans.starter.description}
+            name={dict.pricing.plans.free.name}
+            price={dict.pricing.plans.free.price}
+            period={dict.pricing.plans.free.period}
+            description={dict.pricing.plans.free.description}
             href="/register"
-            features={dict.pricing.plans.starter.features}
+            features={dict.pricing.plans.free.features}
+            badge={dict.pricing.plans.free.badge}
+            buttonText={dict.pricing.cta}
           />
           <Plan
             featured
-            name={dict.pricing.plans.smallBusiness.name}
-            price={dict.pricing.plans.smallBusiness.price}
-            description={dict.pricing.plans.smallBusiness.description}
+            name={dict.pricing.plans.standard.name}
+            price={dict.pricing.plans.standard.price}
+            period={dict.pricing.plans.standard.period}
+            description={dict.pricing.plans.standard.description}
             href="/register"
-            features={dict.pricing.plans.smallBusiness.features}
+            features={dict.pricing.plans.standard.features}
+            badge={dict.pricing.plans.standard.badge}
+            buttonText={dict.pricing.cta}
           />
           <Plan
             name={dict.pricing.plans.enterprise.name}
             price={dict.pricing.plans.enterprise.price}
+            period={dict.pricing.plans.enterprise.period}
             description={dict.pricing.plans.enterprise.description}
             href="/register"
             features={dict.pricing.plans.enterprise.features}
+            badge={dict.pricing.plans.enterprise.badge}
+            buttonText={dict.pricing.contactSales}
           />
         </div>
       </Container>

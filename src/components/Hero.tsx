@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
@@ -11,6 +14,7 @@ import logoTuple from '@/images/logos/tuple.svg'
 import type { Dictionary } from '@/app/[lang]/dictionaries'
 
 export function Hero({ dict }: { dict: Dictionary }) {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
   return (
     <Container className="pb-16 pt-20 text-center lg:pt-32">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
@@ -34,7 +38,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register">{dict.hero.cta.primary}</Button>
         <Button
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          onClick={() => setIsVideoOpen(true)}
           variant="outline"
         >
           <svg
@@ -46,7 +50,37 @@ export function Hero({ dict }: { dict: Dictionary }) {
           <span className="ml-3">{dict.hero.cta.secondary}</span>
         </Button>
       </div>
-      <div className="mt-36 lg:mt-44">
+
+      {/* Video Modal */}
+      {isVideoOpen && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setIsVideoOpen(false)}
+        >
+          <div 
+            className="relative w-full max-w-5xl aspect-video"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+              aria-label="Close video"
+            >
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/mOnuLau6ZCo?si=kaGgFORXn2TWXPLp&autoplay=1"
+              title="MSeller Demo Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
+      {/* <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
           {dict.hero.trustedBy}
         </p>
@@ -80,7 +114,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </Container>
   )
 }
