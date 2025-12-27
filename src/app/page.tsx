@@ -8,6 +8,7 @@ import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { AppShowcase } from '@/components/AppShowcase'
 import { AIFeatures } from '@/components/AIFeatures'
+import { Contact } from '@/components/Contact'
 import { getDictionary, defaultLocale } from './[lang]/dictionaries'
 
 export default async function Home() {
@@ -25,6 +26,7 @@ export default async function Home() {
         <AppShowcase dict={dict} />
         <Pricing dict={dict} />
         <Faqs dict={dict} />
+        <Contact dict={dict} />
       </main>
       <Footer dict={dict} />
     </>

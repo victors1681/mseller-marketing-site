@@ -246,6 +246,34 @@
         ],
         "ariaLabel": "Key Features"
     },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions or want to see MSeller in action? Contact our team and we'll get back to you within 24 hours.",
+        "info": {
+            "phone": {
+                "label": "Phone"
+            },
+            "locations": {
+                "label": "Locations",
+                "dr": "Dominican Republic",
+                "usa": "New Jersey, USA"
+            },
+            "email": {
+                "label": "Email"
+            }
+        },
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "company": "Company",
+            "phone": "Phone",
+            "message": "Message",
+            "submit": "Send Message",
+            "sending": "Sending...",
+            "successMessage": "Thank you! We'll be in touch soon.",
+            "errorMessage": "Something went wrong. Please try again."
+        }
+    },
     "auth": {
         "login": {
             "title": "Sign in to your account",

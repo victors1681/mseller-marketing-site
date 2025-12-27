@@ -246,6 +246,34 @@
         ],
         "ariaLabel": "Características Clave"
     },
+    "contact": {
+        "title": "Contáctanos",
+        "subtitle": "¿Tienes preguntas o quieres ver MSeller en acción? Contacta a nuestro equipo y te responderemos en 24 horas.",
+        "info": {
+            "phone": {
+                "label": "Teléfono"
+            },
+            "locations": {
+                "label": "Ubicaciones",
+                "dr": "República Dominicana",
+                "usa": "Nueva Jersey, EE.UU."
+            },
+            "email": {
+                "label": "Correo"
+            }
+        },
+        "form": {
+            "name": "Nombre",
+            "email": "Correo electrónico",
+            "company": "Empresa",
+            "phone": "Teléfono",
+            "message": "Mensaje",
+            "submit": "Enviar Mensaje",
+            "sending": "Enviando...",
+            "successMessage": "¡Gracias! Nos pondremos en contacto pronto.",
+            "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo."
+        }
+    },
     "auth": {
         "login": {
             "title": "Inicia sesión en tu cuenta",

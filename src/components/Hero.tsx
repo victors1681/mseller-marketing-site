@@ -37,10 +37,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register">{dict.hero.cta.primary}</Button>
-        <Button
-          onClick={() => setIsVideoOpen(true)}
-          variant="outline"
-        >
+        <Button onClick={() => setIsVideoOpen(true)} variant="outline">
           <svg
             aria-hidden="true"
             className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
@@ -53,25 +50,35 @@ export function Hero({ dict }: { dict: Dictionary }) {
 
       {/* Video Modal */}
       {isVideoOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
           onClick={() => setIsVideoOpen(false)}
         >
-          <div 
-            className="relative w-full max-w-5xl aspect-video"
+          <div
+            className="relative aspect-video w-full max-w-5xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setIsVideoOpen(false)}
-              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+              className="absolute -top-10 right-0 text-white transition-colors hover:text-gray-300"
               aria-label="Close video"
             >
-              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
             <iframe
-              className="w-full h-full rounded-lg"
+              className="h-full w-full rounded-lg"
               src="https://www.youtube.com/embed/mOnuLau6ZCo?si=kaGgFORXn2TWXPLp&autoplay=1"
               title="MSeller Demo Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
