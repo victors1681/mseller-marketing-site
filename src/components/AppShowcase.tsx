@@ -243,7 +243,7 @@ export function AppShowcase({ dict }: { dict: Dictionary }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 transition-colors hover:text-blue-300"
             >
-              Get started free
+              {dict.appShowcase?.goToAppStore || 'Go to App Store'}
               <svg
                 className="h-4 w-4"
                 fill="none"

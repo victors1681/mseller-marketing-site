@@ -3,6 +3,7 @@
         "features": "Features",
         "appShowcase": "iOS App",
         "pricing": "Pricing",
+        "contact": "Contact",
         "signIn": "Sign in"
     },
     "hero": {
@@ -13,7 +14,7 @@
         },
         "subtitle": "Streamline orders, invoices, inventory, and sales with MSeller Cloud. A comprehensive platform that unifies your business operations with powerful mobile capabilities.",
         "cta": {
-            "primary": "Start free trial",
+            "primary": "Start with the free plan",
             "secondary": "Watch demo"
         },
         "trustedBy": "Trusted by growing businesses worldwide"
@@ -113,24 +114,20 @@
             "Make confident decisions backed by real data",
             "Works on any device - phone, tablet, or computer",
             "Learns your business to give better answers over time"
-        ],
-        "cta": {
-            "title": "Work Smarter with AI",
-            "subtitle": "Stop digging through reports. Start having conversations with your data.",
-            "button": "Try AI Assistant"
-        }
+        ]
     },
     "callToAction": {
         "title": "Transform your business today",
         "subtitle": "Join modern businesses using MSeller Cloud to streamline operations, boost productivity, and drive growth with real-time insights.",
-        "cta": "Start free trial"
+        "cta": "Start with the free plan"
     },
     "appShowcase": {
         "badge": "Now Available on iOS",
         "title": "MSeller for iOS",
         "subtitle": "Made specially for Sales Representatives and Drivers in distribution. Native iOS app with intuitive design, lightning-fast performance, and offline capabilities.",
         "appStoreButton": "Download on the App Store",
-        "ctaText": "Join thousands of sales teams using MSeller"
+        "ctaText": "Join thousands of sales teams using MSeller",
+        "goToAppStore": "Go to App Store"
     },
     "pricing": {
         "title": {

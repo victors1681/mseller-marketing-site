@@ -165,19 +165,6 @@ export function AIFeatures({ dict }: { dict: Dictionary }) {
             </ul>
           </div>
         </div>
-
-        {/* CTA Section */}
-        <div className="mx-auto mt-16 max-w-2xl text-center">
-          <h3 className="text-3xl font-bold text-slate-900">
-            {dict.aiFeatures.cta.title}
-          </h3>
-          <p className="mt-4 text-lg text-slate-600">
-            {dict.aiFeatures.cta.subtitle}
-          </p>
-          <button className="mt-8 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 px-10 py-4 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
-            {dict.aiFeatures.cta.button}
-          </button>
-        </div>
       </Container>
     </section>
   )

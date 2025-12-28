@@ -97,6 +97,9 @@ function MobileNavigation({ dict, lang }: { dict: Dictionary; lang: Locale }) {
             <MobileNavLink href="#pricing">
               {dict.navigation.pricing}
             </MobileNavLink>
+            <MobileNavLink href="#contact">
+              {dict.navigation.contact || 'Contact'}
+            </MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href={`/${lang}/login`}>
               {dict.navigation.signIn}
@@ -130,6 +133,9 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
                 {dict.navigation.appShowcase}
               </NavLink>
               <NavLink href="#pricing">{dict.navigation.pricing}</NavLink>
+              <NavLink href="#contact">
+                {dict.navigation.contact || 'Contact'}
+              </NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">

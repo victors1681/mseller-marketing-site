@@ -3,6 +3,7 @@
         "features": "Características",
         "appShowcase": "App iOS",
         "pricing": "Precios",
+        "contact": "Contacto",
         "signIn": "Iniciar sesión"
     },
     "hero": {
@@ -13,7 +14,7 @@
         },
         "subtitle": "Optimiza pedidos, facturas, inventario y ventas con MSeller Cloud. Una plataforma integral que unifica tus operaciones con potentes capacidades móviles.",
         "cta": {
-            "primary": "Iniciar prueba gratis",
+            "primary": "Comenzar con el plan gratis",
             "secondary": "Ver demo"
         },
         "trustedBy": "Confiado por empresas en crecimiento en todo el mundo"
@@ -113,24 +114,20 @@
             "Toma decisiones seguras respaldadas por datos reales",
             "Funciona en cualquier dispositivo - teléfono, tablet o computadora",
             "Aprende tu negocio para dar mejores respuestas con el tiempo"
-        ],
-        "cta": {
-            "title": "Trabaja Más Inteligente con IA",
-            "subtitle": "Deja de revisar informes. Comienza a tener conversaciones con tus datos.",
-            "button": "Probar Asistente IA"
-        }
+        ]
     },
     "callToAction": {
         "title": "Transforma tu negocio hoy",
         "subtitle": "Únete a las empresas modernas que usan MSeller Cloud para optimizar operaciones, aumentar productividad e impulsar crecimiento con datos en tiempo real.",
-        "cta": "Iniciar prueba gratis"
+        "cta": "Comenzar con el plan gratis"
     },
     "appShowcase": {
         "badge": "Ahora Disponible en iOS",
         "title": "MSeller para iOS",
         "subtitle": "Hecho especialmente para Representantes de Ventas y Conductores en distribución. App nativa iOS con diseño intuitivo, rendimiento ultra rápido y capacidades sin conexión.",
         "appStoreButton": "Descargar en App Store",
-        "ctaText": "Únete a miles de equipos de ventas usando MSeller"
+        "ctaText": "Únete a miles de equipos de ventas usando MSeller",
+        "goToAppStore": "Ir a App Store"
     },
     "pricing": {
         "title": {
@@ -170,7 +167,7 @@
                 "price": "$25",
                 "period": "/ usuario / mes",
                 "description": "Para empresas en crecimiento que necesitan control e insights",
-                "badge": "⭐ Mejor Valor",
+                "badge": "Mejor Valor",
                 "ideal": "Mejor valor para PYMEs escalando ventas y distribución",
                 "features": [
                     "Hasta 1,000 clientes",
@@ -192,7 +189,7 @@
                 "price": "Precio",
                 "period": "personalizado",
                 "description": "Para grandes organizaciones con operaciones complejas",
-                "badge": "🏢",
+                "badge": "",
                 "ideal": "Construido para empresas con alto volumen, automatización e integraciones",
                 "features": [
                     "Clientes ilimitados",
