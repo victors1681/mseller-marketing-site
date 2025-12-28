@@ -193,7 +193,7 @@ export function AppShowcase({ dict }: { dict: Dictionary }) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
           className="mx-auto mt-20 max-w-6xl"
         >
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -203,7 +203,7 @@ export function AppShowcase({ dict }: { dict: Dictionary }) {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 className="group relative overflow-hidden rounded-2xl bg-slate-800/50 p-6 ring-1 ring-slate-700/50 transition-all hover:bg-slate-800 hover:ring-slate-600"
               >
                 <div className="flex items-start gap-4">
@@ -229,7 +229,7 @@ export function AppShowcase({ dict }: { dict: Dictionary }) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.8 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
           className="mt-16 text-center"
         >
           <p className="text-lg font-medium text-slate-300">
