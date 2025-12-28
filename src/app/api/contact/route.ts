@@ -8,6 +8,14 @@ export async function POST(request: Request) {
     const body = await request.json()
     const { name, email, company, phone, message } = body
 
+    // Log environment variables (without exposing the full API key)
+    console.log('Environment check:', {
+      hasApiKey: !!process.env.RESEND_API_KEY,
+      apiKeyPrefix: process.env.RESEND_API_KEY?.substring(0, 7),
+      fromEmail: process.env.RESEND_FROM_EMAIL,
+      toEmail: process.env.RESEND_TO_EMAIL,
+    })
+
     // Validate required fields
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -25,8 +33,19 @@ export async function POST(request: Request) {
       )
     }
 
+    // Check if API key is configured
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is not configured')
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 500 },
+      )
+    }
+
+    console.log('Attempting to send email via Resend...')
+
     // Send email using Resend
-    await resend.emails.send({
+    const emailData = {
       from:
         process.env.RESEND_FROM_EMAIL ||
         'MSeller Contact <onboarding@resend.dev>',
@@ -91,10 +110,28 @@ export async function POST(request: Request) {
           </body>
         </html>
       `,
-    })
+    }
+
+    const result = await resend.emails.send(emailData)
+
+    console.log('Resend API response:', result)
+
+    if (result.error) {
+      console.error('Resend API error:', result.error)
+      return NextResponse.json(
+        { error: `Failed to send email: ${result.error.message}` },
+        { status: 500 },
+      )
+    }
+
+    console.log('Email sent successfully:', result.data)
 
     return NextResponse.json(
-      { success: true, message: 'Message sent successfully' },
+      {
+        success: true,
+        message: 'Message sent successfully',
+        data: result.data,
+      },
       { status: 200 },
     )
   } catch (error) {

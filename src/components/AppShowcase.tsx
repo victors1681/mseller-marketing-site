@@ -119,7 +119,7 @@ export function AppShowcase({ dict }: { dict: Dictionary }) {
         >
           <div className="relative">
             {/* Horizontal Scrolling Container */}
-            <div className="scrollbar-hide flex gap-4 overflow-x-auto pb-4">
+            <div className="scrollbar-hide flex gap-4 overflow-x-auto overflow-y-hidden pb-4">
               {[
                 {
                   id: 1,
@@ -158,7 +158,7 @@ export function AppShowcase({ dict }: { dict: Dictionary }) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0 + index * 0.1 }}
-                  whileHover={{ scale: 1.03, y: -8 }}
+                  whileHover={{ scale: 1.03 }}
                   className="group relative flex-shrink-0 cursor-pointer"
                   style={{ width: '240px' }}
                 >

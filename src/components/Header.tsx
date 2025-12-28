@@ -101,6 +101,13 @@ function MobileNavigation({ dict, lang }: { dict: Dictionary; lang: Locale }) {
             <MobileNavLink href={`/${lang}/login`}>
               {dict.navigation.signIn}
             </MobileNavLink>
+            <hr className="m-2 border-slate-300/40" />
+            <div className="px-2 py-2">
+              <div className="mb-2 text-sm font-medium text-slate-600">
+                {lang === 'es' ? 'Idioma' : 'Language'}
+              </div>
+              <LanguageDropdown />
+            </div>
           </PopoverPanel>
         </TransitionChild>
       </Transition>
@@ -131,7 +138,6 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
                 {dict.navigation.signIn}
               </NavLink>
             </div>
-            <LanguageDropdown />
             <Button href={`/${lang}/register`} color="blue">
               <span>
                 {dict.hero.cta.primary.split(' ')[0]}{' '}
